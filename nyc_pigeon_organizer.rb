@@ -28,11 +28,9 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon][attribute_array[0]] << k.to_s
         else
           new_hash[pigeon] = {:color => [k.to_s], :gender => [], :lives => []}
-          
         end
       end 
     end
   end
   new_hash
-  binding.pry
 end
