@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
         if new_hash[pigeon]
           new_hash[pigeon][:color] << k.to_s
         else
-          new_hash[pigeon] = {:color => [k.to_s]}
+          new_hash[pigeon] = {:color => [k.to_s], :gender => []}
           new_hash[pigeon] = {:gender => []}
           new_hash[pigeon] = {:lives => []}
           binding.pry
