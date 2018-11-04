@@ -29,6 +29,7 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon][:gender]
         else
           new_hash[pigeon] = {:color => [k.to_s]}
+          new_hash[pigeon] = :color 
         end
       end 
     end
