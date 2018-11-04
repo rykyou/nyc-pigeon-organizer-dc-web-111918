@@ -28,8 +28,8 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon][:color] << k.to_s
         else
           new_hash[pigeon] = {:color => [k.to_s]}
-          new_hash[pigeon] = :gender
-          new_hash[pigeon] = :lives
+          new_hash[pigeon] = {:gender => []}
+          new_hash[pigeon] = {:lives => []}
           binding.pry
         end
       end 
