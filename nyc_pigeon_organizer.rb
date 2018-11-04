@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
     attribute_array[1].each do |k, v|
       v.each do |pigeon|
         if new_hash[pigeon]
-          new_hash[pigeon][:color] << k.to_s
+          new_hash[pigeon][attribute_array[0]] << k.to_s
         else
           new_hash[pigeon] = {:color => [k.to_s], :gender => [], :lives => []}
           
